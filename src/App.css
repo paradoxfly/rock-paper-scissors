@@ -2,16 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +14,94 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.topnav{
+  margin-bottom: 80px;
+  font-size: 30px;
+  /* background-color: teal; */
+  background-color: transparent;
+  /* color: aliceblue; */
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  background-color: #282c34;
+  color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 1s;
+}
+
+button:hover{
+  background-color: antiquewhite;
+  color: #282c34;
+}
+
+
+textarea{
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+hr{
+  width: 70%;
+}
+
+input{
+  border-radius: 5px;
+  height: 30px;
+  padding: 3px 0px;
+  text-align: center;
+  font-size: 19px;
+}
+
+small{
+  color: red;
+  font-size: 15px;
+}
+
+.animate{
+  /* animation: text 2s infinite; */
+  color: #020887;
+  text-transform: capitalize;
+}
+
+.error{
+  border: 1px solid red;
+}
+
+.timeout-img{
+  width: 100px;
+}
+
+.timeout{
+  font-size: 60px;
+  animation: text 2s infinite;
+}
+
+.guess{
+  position: fixed;
+  left: 40%;
+  font-size: 22px;
+  font-weight: 600;
+}
+@keyframes text {
+  0%{
+      color: #a9dbb8;
+      /* transform: translateX(1px) */
   }
-  to {
-    transform: rotate(360deg);
+  33%{
+      color: #7ca5b8;
+  }
+  66%{
+      color: #38369a;
+  }
+  100%{
+      color: #020887;
   }
 }
